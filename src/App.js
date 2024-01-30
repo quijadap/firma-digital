@@ -56,6 +56,10 @@ return(
         <Route path="/uploadfile" element={<FileUploadFunction/>}></Route>
     </Routes>
     </div>
+
+    <div>
+        <Image src="firmavirtual_logo.png" />
+      </div>
   </div>
 );
 
