@@ -14,8 +14,8 @@ function Reportproblem() {
       <h1>Report a Problem</h1>
       
       <p>
-      if you find any errors in the writings or any bug in the App design you can send us an email @ <span style={{color:'blue'}}>contact@musk-technology.com. </span>
-Your email subject line should be "problem in the reactdeveloper.pk"
+      Si encuentra un error o bug en la APP puede enviar un correo a email @ <span style={{color:'blue'}}>quijadap@gmail.com. </span>
+Tu Email Subject debe ser "Problema con la App Firma Digital"
       
       </p>
       

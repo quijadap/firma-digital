@@ -29,33 +29,20 @@ return (
               <NavLink style={({ isActive }) => ({
               color: isActive ? 'red' : 'blue'
             })} className="bloglink1" to="/">Home</NavLink>
-              <NavLink style={({ isActive }) => ({
-              color: isActive ? 'red' : 'blue'
-            })} className="bloglink1" to="/blogs">Blogs</NavLink>
-              <NavLink style={({ isActive }) => ({
-              color: isActive ? 'red' : 'blue'
-            })} className="bloglink1" to="/programming-tutorials">Tutorials</NavLink>
-              <NavLink style={({ isActive }) => ({
-              color: isActive ? 'red' : 'green'
-            })} className="bloglink1" to="/write-with-me">Write with me</NavLink>
-
-          <NavLink style={({ isActive }) => ({
+                       <NavLink style={({ isActive }) => ({
               color: isActive ? 'red' : 'green'
             })} className="bloglink1" to="/reportproblem">Report a problem</NavLink>
 
           <NavLink style={({ isActive }) => ({
               color: isActive ? 'red' : 'green'
-            })} className="bloglink1" to="/Uploadfile">Upload Archivo</NavLink>
+            })} className="bloglink1" to="/Upload">Subir Archivo</NavLink>
 
-<NavLink style={({ isActive }) => ({
-              color: isActive ? 'red' : 'green'
-            })} className="bloglink1" to="/uploadfile">Upload Advanced</NavLink>
     </div>
 
   <div className="mainroutes">
     <Routes>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="/AdvancedUpload" element={<AdvancedUpload/>}></Route>
+        <Route path="/blog" element={<Blog/>}></Route>
         <Route path="/programming-tutorials/*" element={<Tutorials/>}></Route>
         <Route path="/react-tutorial/*" element={<React.Suspense fallback={<div style={{paddingTop: '10%', paddingLeft:'40%'}}><ColorRing></ColorRing></div>}>
         <Reacttutorial/>

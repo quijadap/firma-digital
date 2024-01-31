@@ -36,4 +36,4 @@ Your email subject line should be "problem in the reactdeveloper.pk"
   );
 };
 
-export default FileUploadFunction;
+export default Uploadfile;
