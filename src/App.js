@@ -3,16 +3,9 @@ import React, {Suspense, useState, useEffect} from 'react'
 import {Routes, Route, Link, NavLink} from 'react-router-dom'
 import Home from './Components/Home';
 import Upload from './Components/Upload';
-import Blog from './Components/Blog';
-import Tutorials from './Components/Tutorials';
-import Writewithus from './Writewithus';
 import Reportproblem from './Components/Reportproblem';
-import { Audio, Circles, ColorRing } from 'react-loader-spinner';
-
-
 
 const  Reacttutorial = React.lazy(()=> import ('./Components/Reacttutorial') );
-
 
 function App() {
   
@@ -38,13 +31,6 @@ return (
   <div className="mainroutes">
     <Routes>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="/blog" element={<Blog/>}></Route>
-        <Route path="/programming-tutorials/*" element={<Tutorials/>}></Route>
-        <Route path="/react-tutorial/*" element={<React.Suspense fallback={<div style={{paddingTop: '10%', paddingLeft:'40%'}}><ColorRing></ColorRing></div>}>
-        <Reacttutorial/>
-            </React.Suspense>}></Route>
-        <Route path="/write-with-me" element={<Writewithus/>}></Route>
-
         <Route path="/reportproblem" element={<Reportproblem/>}></Route>
         <Route path="/upload" element={<Upload/>}></Route>
     </Routes>

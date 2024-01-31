@@ -4,13 +4,15 @@ import "./Components.css"
 
 function Home() {
     useEffect(()=>{
-        document.title="reactdeveloper.pk"
-        document.getElementsByTagName("META")[3].content="I am a React developer who can develop complex user interfaces for the web. You can contact me at +92 310 4864308";
+        document.title="Firma Digital"
+        document.getElementsByTagName("META")[3].content="Proyecto de Firma Digital Simple - Pedro Quijada";
       }, [])
       
         return (
           <div>
       <div>
+
+      <div class="logohome"><br/><img src="../firmavirtual_logo.png"  height="250" width="250" /></div>
          </div>
       
           </div>
