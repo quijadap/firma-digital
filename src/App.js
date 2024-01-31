@@ -1,9 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import React, {Suspense, useState, useEffect} from 'react'
-import ReactDOM from 'react-dom/client'
 import {Routes, Route, Link, NavLink} from 'react-router-dom'
-import Initial from './Components/Initial';
 import Home from './Components/Home';
 import Upload from './Components/Upload';
 import Blog from './Components/Blog';
@@ -11,8 +8,7 @@ import Tutorials from './Components/Tutorials';
 import Writewithus from './Writewithus';
 import Reportproblem from './Components/Reportproblem';
 import { Audio, Circles, ColorRing } from 'react-loader-spinner';
-import FileUploadFunction from './Uploadfile';
-import AdvancedUpload from './Components/AdvancedUpload';
+
 
 
 const  Reacttutorial = React.lazy(()=> import ('./Components/Reacttutorial') );

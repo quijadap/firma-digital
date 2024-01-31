@@ -7,7 +7,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { inject } from '@vercel/analytics';
 inject();
 
-export { default as default } from './Components/AdvancedUpload';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
