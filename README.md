@@ -24,7 +24,7 @@ Para Copilar la Aplicación debe ejecutar el comando
 
 ### `Subir PDF File`
 
-![PDF](https://github.com/quijadap/firma-digital/blob/master/public/Subir1.jpg)
+![PDF](https://github.com/quijadap/firma-digital/blob/master/public/Subir2.jpg)
 
 ### Pedro Manuel Quijada Gil
 Desarrollo de Prueba de concepto de Subir un Archivo Word o PDF
