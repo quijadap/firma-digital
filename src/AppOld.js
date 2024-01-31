@@ -12,8 +12,6 @@ import Writewithus from './Writewithus';
 import Reportproblem from './Components/Reportproblem';
 import { Audio, Circles, ColorRing } from 'react-loader-spinner';
 import FileUploadFunction from './Uploadfile';
-import AdvancedUpload from './Components/AdvancedUpload';
-
 
 const  Reacttutorial = React.lazy(()=> import ('./Components/Reacttutorial') );
 
@@ -46,16 +44,12 @@ return (
           <NavLink style={({ isActive }) => ({
               color: isActive ? 'red' : 'green'
             })} className="bloglink1" to="/Uploadfile">Upload Archivo</NavLink>
-
-<NavLink style={({ isActive }) => ({
-              color: isActive ? 'red' : 'green'
-            })} className="bloglink1" to="/uploadfile">Upload Advanced</NavLink>
     </div>
 
   <div className="mainroutes">
     <Routes>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="/AdvancedUpload" element={<AdvancedUpload/>}></Route>
+        <Route path="/blogs/*" element={<Blog/>}></Route>
         <Route path="/programming-tutorials/*" element={<Tutorials/>}></Route>
         <Route path="/react-tutorial/*" element={<React.Suspense fallback={<div style={{paddingTop: '10%', paddingLeft:'40%'}}><ColorRing></ColorRing></div>}>
         <Reacttutorial/>
@@ -64,6 +58,7 @@ return (
 
         <Route path="/reportproblem" element={<Reportproblem/>}></Route>
         <Route path="/upload" element={<Upload/>}></Route>
+        <Route path="/uploadfile" element={<FileUploadFunction/>}></Route>
     </Routes>
   </div>
 
